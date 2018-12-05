@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+	<style type="text/css">
+		body
+		{
+			scroll-behavior: smooth;
+			background-color: ;
+			/*rgba(24, 20, 200, 0.5), rgba(24, 190, 150, 0.5)*/
+			/*rgba(0,168,255,0.5), rgba(185,0,255,0.5)*/
+			background-image: linear-gradient(to right, rgba(24, 20, 200, .6), rgba(24, 190, 150, .6)), url(../Images/Capture1.png);
+			font-family: Roboto;
+		}
+		form
+		{
+			width: 700px;
+			margin: 20px auto;
+			background: #fff;
+			border-radius: 12px;
+			overflow: hidden;
+			padding: 72px 100px 25px 100px;
+		}
+		fieldset
+		{
+			padding: 30px;
+			border-radius: 7px;
+			margin-bottom: 40px;
+			border: solid 0.5px #669999;
+		}
+		fieldset:hover
+		{
+			box-shadow: 0px 2px 30px 1px #3399ff;
+		}
+		#title { text-align: center; font-family: Roboto; font-weight: bold; font-size: 30px;}
+		legend { font-weight: bold; }
+		input.textinput
+		{
+			border-radius: 20px;
+			border-color: white;
+			height: 52px;
+			font-size: 16px;
+			line-height: 1.2;
+			width: 350px;
+			padding: 0 20px 0 23px;
+			background: transparent;
+			outline: none;
+			border: none;
+			margin-bottom: 30px;
+			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+			display: block;								/*gives them block property i.e. a new line is included at the end instead of manually giving <br> tags*/
+		}
+		textarea.textinput
+		{
+			font-size: 16px;
+			line-height: 1.2;
+			border-radius: 20px;
+			padding: 0 20px 0 23px;
+			outline: none;
+			border: none;
+			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+			max-width: 590px;
+		}
+		.textinput:hover
+		{
+			/*box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);*/
+			box-shadow: 0px 3px 20px 0px rgba(35, 255, 51, 0.5);
+		}
+		label
+		{
+			font-size: 20px;
+		}
+		select
+		{
+			border-radius: 10px;
+			padding: 7px;
+			border: none;
+			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+			outline: none;
+		}
+		select:hover
+		{
+			box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.7);
+		}
+		.radio
+		{
+			margin-top: 10px;
+			margin-left: 70px;
+		}
+		.slider
+		{
+			-webkit-appearance: none;
+			height: 20px;
+			background: #d3d3d3;
+			opacity: 0.7;
+		}
+		.slider:hover
+		{
+			opacity: 1;
+		}
+		.slider::-webkit-slider-thumb
+		{
+			-webkit-appearance: none;
+			width: 20px;
+			height: 20px;
+			background: #4CAF50;
+			cursor: pointer;
+		}
+		#buttons
+		{
+			font-family: JosefinSans-Bold;
+
+		}
+		button
+		{
+			border-radius: 8px 0px;
+			background-color: transparent;
+			font-family: Futura Book;
+			padding: 6px 15px;
+			border: 0;
+			margin-right: 10px;
+		}
+		button:hover
+		{
+			font-size: 18px;
+			padding: 4px 10px;
+		}
+		#submitall
+		{
+			background-color: #00E600;
+			color: #fff;
+		}
+		#resetall
+		{
+			background-color: #FF002B;
+			color: #fff;
+		}
+		.more { margin-top: 20px; }
+	</style>
+	<link rel="shortcut icon" type="text/css" href="../Images/india.png">
+	<title> Contact Us </title>
+</head>
+<body>
+		<form>
+			<div id="title">Contact Us</div>
+			<fieldset>
+				<legend> General Details </legend>
+				<input type="text" name="username" placeholder="Full Name" class="textinput">
+				<input type="PASSWORD" name="pass" placeholder="Password" class="textinput">
+				<input type="mobile" name="mobile" placeholder="Country Code + Mobile Number" class="textinput">
+			</fieldset><br>
+			
+			<fieldset>
+				<legend> Additional Details </legend>
+				<label>Gender</label><br>
+				<input type="radio" class="radio" name="gen">Male
+				<input type="radio" class="radio" name="gen">Female
+				<input type="radio" class="radio" name="gen">Other<br><br>
+				<label for="biday">Date of Birth</label><br>
+				<input type="date" name="birthday" id="bday" min="1980/1/1"><br><br>
+				<label>Languages Spoken</label><br>
+				<input type="checkbox" name="">English<br>
+				<input type="checkbox" name="">Hindi<br>
+				<input type="checkbox" name="">Kannada<br>
+				<input type="checkbox" name="">Tamil<br>
+				<input type="checkbox" name="">Others<br>
+				<input type="text" class="textinput" name="" placeholder="Please Specify">
+				<label>Race</label><br>
+				<select>
+					<option>American</option>
+					<option>Asian</option>
+					<option>African</option>
+					<option>Hispanic</option>
+				</select><br>
+			</fieldset><br><br>
+
+			<fieldset>
+				<legend>User Feedback</legend>
+				<label>How was the User Interface of our website?</label><br>
+				<input type="range" class="slider" id="slide1" min="1" max="10" value="0" oninput="score1.value=slide1.value">
+				<output  id="score1"></output><br>
+				<label>How easy was it to navigate and find things you were looking for?</label><br>
+				<input type="range" class="slider" id="slide2" min="1" max="10" value="0" oninput="score2.value=slide2.value">
+				<output  id="score2"></output><br>
+				<label>Did you find the links to be relevent and useful?</label><br>
+				<input type="range" class="slider" id="slide3" min="1" max="10" value="0" oninput="score3.value=slide3.value">
+				<output  id="score3"></output><br>
+				<label>On a scale from 1 to 10, how much would you give us for your experience?</label><br>
+				<input type="range" class="slider" id="slide4" min="1" max="10" value="0" oninput="score4.value=slide4.value">
+				<output  id="score4"></output><br><br>
+				<textarea name="feedback" class="textinput" placeholder="Suggestions or comments? We'd love to hear from you!" rows="10" cols="63"></textarea>
+			</fieldset>
+
+			<center id="buttons">
+				<button type="submit" name="submit" id="submitall" value="LET'S GO!">SUBMIT</button>
+				<button type="reset" name="reset" id="resetall" value="RESET">RESET</button><br>
+			</center>
+
+			<div class="more" align="center">
+				Contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

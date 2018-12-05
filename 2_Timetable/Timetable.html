@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CHRIST Timetable </title>
+	<link rel="shortcut icon" type="text/css" href="../Images/Christ.png">
+	<style type="text/css">
+		html
+		{
+			scroll-behavior: smooth;
+		}
+		h1 { color: darkcyan; margin-left :470px; margin-top: 15px;}
+		h3 { margin: 10px 0px 0px 20px; }
+		table
+		{
+			text-align: center;
+			text-transform: uppercase;
+			border-radius: 20px;
+			box-shadow: 3px 3px 50px;
+			background-color: rgb(215, 235, 221, 0.4);
+		}
+		caption
+		{
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		th,td
+		{
+			padding: 6px;
+			border-radius: 6px 0px 6px 0px;
+		}
+		td:nth-of-type(1)
+		{
+			font-weight: bold;
+			padding: 6px 20px;
+		}
+		#title
+		{
+			font-weight: bold;
+		}
+		footer
+		{
+			margin-top: 30px;
+		}
+		#pgup
+		{
+			height: 50px;
+			border-radius: 30px;
+		}
+		#pgup:hover
+		{
+			background-color: white;
+		}
+		.javalab
+		{
+			background-color: black;
+			color: white;
+		}
+		.langlab
+		{
+			background-color: #FF4242;
+			color: yellow;
+		}
+		.webtechlab
+		{
+			background-color: #2A7AD4;
+			color: white;
+		}
+		.cn { color: blue; }
+		.math { color: #DC01FF; }
+		.eng { color: #25D316; }
+		.fm { color: #00CED1; }
+		.dbms { color:	#A52A2A; }
+		#hed { color: #D35400; }
+	</style>
+</head>
+<body background="../Images/bg5.jpg">
+	<div style="margin-top: 0px;">
+		<img src="Images/Christ.png" style="position: fixed; left:27%; height: 100px;"> <br> <h1> CHRIST UNIVERSITY TIME TABLE</h1> <br>
+		<h3> DEPARTMENT OF COMPUTER SCIENCE </h3>
+	</div>
+	<div>
+		<ul>
+			<li> <a href="#4bcaa"> 4 BCA A </a></li>
+			<li> 4 BCA B </li>
+			<li> 6 BCA A </li>
+			<li> 6 BCA A </li>
+		</ul>
+	</div>
+	<div>
+		<table id="4bcaa" border="1" align="center" bordercolor="#21618C">
+			<caption> 4 BCA-A TIME TABLE</caption>
+			<colgroup>
+				<col style="font-weight: bold;">
+			</colgroup>
+			<tr>
+				<th style="border-top-left-radius: 20px;"> DAY/TIME </th>
+				<th> Period 1 </th>
+				<th> Period 2 </th>
+				<th> Period 3 </th>
+				<th> Period 4 </th>
+				<th> BREAK </th>
+				<th> Period 5 </th>
+				<th style="border-top-right-radius: 20px;"> Period 6 </th>
+			</tr>
+			<tr id="title">
+				<td> TIMING </td>
+				<td> 9:00 to 10:00 AM </td>
+				<td> 10:00 TO 11:00 AM </td>
+				<td> 11:00 TO 12:00 PM </td>
+				<td> 12:00 TO 1:00 PM </td>
+				<td> 1:00 TO 2:00 PM </td>
+				<td> 2:00 TO 3:00 PM </td>
+				<td> 3:00 TO 4:00 PM </td>
+			</tr>
+			<tr>
+				<td> MONDAY </td>
+				<td colspan="2" class="javalab"> JAVA LAB </td>
+				<td class="math"> MATH </td>
+				<td id="hed"> HED </td>
+				<td rowspan="6" style="line-height: 25px; font-weight: bold;"> L<br>U<br>N<br>C<br>H </td>
+				<td colspan="2" class="dbms"> DBMS PROJECT </td>
+			</tr>
+			<tr>
+				<td> TUESDAY </td>
+				<td class="cn"> CN </td>
+				<td> JAVA </td>
+				<td class="fm"> FM </td>
+				<td class="eng"> ENGLISH </td>
+				<td colspan="2" class="webtechlab"> WEB TECH LAB </td>
+			</tr>
+			<tr>
+				<td> WEDNESDAY  </td>
+				<td> JAVA </td>
+				<td class="eng"> ENGLISH </td>
+				<td colspan="2" class="webtechlab"> WEB TECH LAB </td>
+				<td colspan="2" class="langlab"> LANGUAGE LAB </td>
+			</tr>
+			<tr>
+				<td> THURSDAY </td>
+				<td> JAVA </td>
+				<td class="fm"> FM </td>
+				<td colspan="2" class="dbms"> DBMS PROJECT </td>
+				<td class="cn"> CN </td>
+				<td class="cn"> CN </td>
+			</tr>
+			<tr>
+				<td> FRIDAY </td>
+				<td class="math"> MATH </td>
+				<td class="cn"> CN </td>
+				<td colspan="2" class="javalab"> JAVA LAB </td>
+				<td class="fm"> FM </td>
+				<td> JAVA </td>
+			</tr>
+			<tr>
+				<td style="border-bottom-left-radius: 20px;"> SATURDAY </td>
+				<td colspan="2" class="langlab"> LANGUAGE LAB </td>
+				<td class="math"> MATH </td>
+				<td class="eng"> ENGLISH </td>
+				<td> - </td>
+				<td style="border-bottom-right-radius: 20px;"> - </td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		For more information, please visit Christ's <a href="https://christuniversity.in/"> official website. </a>
+	</footer>
+
+</body>
+
+
+
+</html>

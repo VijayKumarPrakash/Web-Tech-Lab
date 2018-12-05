@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Image Map </title>
+	<style type="text/css">
+		html
+		{
+			scroll-behavior: smooth;
+		}
+		body
+		{
+			background-image: url(../Images/indiaflag.jpg);
+			background-position: center;
+			background-blend-mode: screen;
+		}
+		#intro { text-align: center; font-size: 19px; }
+		.backtotop:hover
+		{
+			background-color: black;
+		}
+	</style>
+	<link rel="shortcut icon" type="text/css" href="../Images/india.png">
+</head>
+<body>
+	<h1 align="center"> INDIA: STATES AND UNION TERRITORIES </h1>
+	<div>
+		<p id="intro"> Click on a certain state to get redirected to its official tourism page for further information. </p>
+	</div>
+	<div align="center">
+		<img src="../Images/indiamap.jpg" alt="India Map" usemap="bharathmap">
+		<map name="bharathmap">
+			<area shape="polygon" coords="168,28,211,157,316,152,322,56" href="https://www.mapsofindia.com/maps/jammuandkashmir/">
+			<area shape="circle" coords="167,317,70" href="https://www.erajasthantourism.net/" target="_blank">
+			<area shape="square" coords="217,376,362,460" href="http://www.mptourism.com/" target="_blank">
+			<area shape="polygon" coords="260,566,212,591,176,618,172,666,189,728,232,760,264,748,292,720,244,680,259,632,260,566" href="http://www.karnatakatourism.org/" target="_blank">
+		</map>
+	</div>
+
+	<div class="backtotop" style="bottom: 20px; right: 15px; position: fixed; border-radius: 30px;"> <a href="#top"> <img src="../Images/gototop.png" style="float: right; height: 50px;"> </a> </div>
+	<footer style="margin: 10px"> <p> Copyright <small> <sup> &copy; </sup> </small> 2018 &#9679; Vijay Kumar Prakash </p> </footer>
+</body>
+
+</html>
